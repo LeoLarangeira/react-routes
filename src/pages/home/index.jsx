@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom"
-
+import { Button } from "../../components/buttons"
+import { HeaderComponent } from "../../components/Header"
 const Home = () => {
     return(
         <>
-        <h1>Home</h1>
+        <HeaderComponent />
         <Link to='/login'>
-            <button>fazer Login</button>
+            <Button title= "Teste">fazer Login</Button>
+            <Button variant="secondary" title="Teste 2">Fazer Login variant</Button>
         </Link>
         </>
     )
